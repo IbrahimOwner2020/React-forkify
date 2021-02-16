@@ -1,0 +1,66 @@
+.List {
+    grid-area: list;
+    background-color: #fff;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.Item {
+    display: flex;
+    padding: 1.8rem 3rem;
+    text-decoration: none;
+    align-items: center;
+    transition: all .5s;
+}
+
+.Item:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+}
+
+.Img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin: 0 2rem 0 0;
+    display: block;
+    object-fit: cover;
+}
+
+.Details {
+    text-transform: uppercase;
+}
+
+.Details h3 {
+    color: #F48982;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: .4rem 0;
+}
+
+.Details span {
+    color: #aaaaaa;
+    font-size: 1.1rem;
+}
+
+.Loading {
+    display: flex;
+    margin: 2rem auto;
+    z-index: 100;
+    transform: translateX(-60%);
+    height: 7rem;
+    width: 7rem;
+    fill: #F59A83;
+    transform-origin: 44% 50%;
+    animation: ror 1.5s infinite linear;
+}
+
+@keyframes ror {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}

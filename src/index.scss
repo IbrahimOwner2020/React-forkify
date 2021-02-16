@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  // @media (max-width: 1200px) {
+  //   font-size: 50%;
+  // }
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #655A56;
+  background-image: linear-gradient(to right bottom, #eafb89, #F48982);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 2 * 4vw); 
+}
+
+// code {
+//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+//     monospace;
+// }

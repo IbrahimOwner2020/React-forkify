@@ -1,0 +1,87 @@
+.shopping {
+    grid-area: shopping;    
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+
+    &__head {
+        color: #F48982;
+        font-size: 1.8rem;
+        font-weight: 300;
+        transform: skewY(-4deg);
+    }
+
+    &__list {
+        max-height: 70rem;
+        overflow: scroll;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 90%;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            border-bottom: 1px solid #d6d6d6;
+            position: relative;
+
+            &:hover .shopping__list-btn {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        &-value {
+            border: 1px solid #d6d6d6;
+            border-radius: 3px;
+            display: flex;
+            width: 7rem;
+            height: 2.5rem;
+        }
+
+        &-num {
+            width: 3.5rem;
+            height: 2.3rem;
+            border: none;
+            margin-right: 1rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &-unit {
+            font-size: 1.3rem;
+            margin-top: .2rem;
+        }
+
+        &-type {
+            font-size: 1.4rem;
+        }
+
+        &-btn {
+            position: absolute;
+            right: 0;
+            background-color: #fafafa;
+            padding: 0;
+            margin-left: 1rem;
+            border-radius:50%;
+            cursor: pointer;
+            border: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s;
+
+            & svg {
+                height: 2rem;
+                width: 2rem;
+                margin-right: 0;
+                fill: #F48982;
+            }
+        }
+    }
+}

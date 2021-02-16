@@ -1,0 +1,20 @@
+.ListItem {
+    margin-left: 3rem;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+        
+.ListItem svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: #F48982;
+    border: 1px solid #F48982;
+    border-radius: 50%;
+    padding: .2rem;
+    margin-right: 1rem;
+}
+
+.ListItemValue {
+    font-size: 1.5rem;
+}

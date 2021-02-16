@@ -1,0 +1,6 @@
+.Body {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1.1fr 55rem 1.1fr;
+    grid-template-areas: "list recipe shopping";
+}
